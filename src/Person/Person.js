@@ -1,11 +1,12 @@
 import React from 'react';
+import './'
 
 var person = function (props) {
     return (
-        <div>
+        <div className="Person">
             <p> I am a {props.name} and I am {props.age} years old</p>
             <p>{props.children}</p>
-            <input type="text" onChange={props.change}></input>
+            <input type="text" onChange={props.change} value={props.name}></input>
         </div>
     );
 }
