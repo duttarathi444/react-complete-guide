@@ -11,24 +11,10 @@ const cockpit = (props) => {
     }
 
     return (
-
-        const style = {
-            backgroundColor: 'green',
-            color: 'white',
-            font: 'inherit',
-            border: '1px solid blue',
-            padding: '8px',
-            cursor: 'pointer',
-            ':hover': {
-                backgroundColor: 'lightgreen',
-                color: 'black'
-            }
-        }
-
-            < p className = { assignedclasses.join(' ') } > This is really Working</p>
-                <button
-                    style={style}
-                    onClick={this.togglePersonsHandler}>Toggle Persons</button>
+        <div>
+            <p> This is really Working</p>
+            <button onClick={this.togglePersonsHandler}>Toggle Persons</button>
+        </div>
     );
 }
 

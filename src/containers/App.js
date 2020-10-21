@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Radium, { StyleRoot } from 'radium';
+// import Radium, { StyleRoot } from 'radium';
 
 // import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 // import person from './Person/Person';
@@ -52,8 +52,6 @@ class App extends Component {
     this.setState({ showPersons: !this.state.showPersons });
   }
 
-
-
   render() {
 
     let persons = null;
@@ -63,21 +61,16 @@ class App extends Component {
           <Persons persons={this.state.persons} clicked={this.deletePersonHandler} changed={this.nameChangedHandler}></Persons>
         </div>
       );
-      style.backgroundColor = 'red';
-      style[':hover'] = {
-        backgroundColor: 'salmon',
-        color: 'black'
-      }
     }
 
     return (
-      <StyleRoot>
-        <div className="App">
-          {persons}
-        </div>
-      </StyleRoot>
+      // <StyleRoot>
+      <div className="App">
+        {persons}
+      </div>
+      // </StyleRoot>
     );
   }
 }
 
-export default Radium(App);
+export default App;
